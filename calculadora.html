@@ -5,6 +5,7 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+
     <style>
       .calculadora {
         margin-top: 40px;
@@ -93,32 +94,9 @@
       </div>
     </div>
     
-    <script>
-      function calcular(tipo, valor) {
-        if(tipo === 'acao') {
+  
 
-          if(valor === 'c') {
-            //limpar o visor (id resultado)
-             document.getElementById('resultado').value = '';
-          }
-
-          if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
-            document.getElementById('resultado').value += valor;
-            
-          }
-
-          if(valor === '=') {
-            let valorCampo = eval(document.getElementById('resultado').value)
-
-            document.getElementById('resultado').value = valorCampo;
-          }
-
-        } else if(tipo === 'valor') {
-          document.getElementById('resultado').value += valor;
-        }
-      }
-
-    </script>
+    <script src="js/script.js"></script>
 
   </body>	
 
